@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.pay-dues {
+  float: right;
+  color: white;
+  background-color: blueviolet;
+  border: none;
+  margin-top: -55px;
+  padding: 7px;
+}
+
+.table-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin: 20px;
+  margin-left: 1px;
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%; /* Ajustement de la largeur du tableau */
+  border-collapse: collapse;
+  margin: 2px;
+  padding: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  border: none;
+  border-spacing: 0px; /* Retrait de l'espacement entre les cellules */
+  margin-right: 20px;
+  border-bottom: 1px solid #dddddd;
+  margin: 0px; 
+  padding: 10px;
+}
+
+th, td {
+  padding: 50px; /* Réduction de la taille des cellules */
+  text-align: left;
+  font-size: 19px; /* Réduction de la taille de la police */
+}
+
+th {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #dddddd;
+}  
+
+.status-active {
+  color: blue;
+  margin-right: 10px; /* Ajout d'espace entre les statuts */
+}
+
+.status-inactive {
+  margin-right: 10px; /* Ajout d'espace entre les statuts */
+}
+
+.status-paid {
+  color: greenyellow;
+  margin-right: 10px; /* Ajout d'espace entre les statuts */
+}
+
+.status-unpaid {
+  color: burlywood;
+  margin-right: 10px; /* Ajout d'espace entre les statuts */
+}
+
+.status-overdue {
+  color: red;
+  margin-right: 10px; /* Ajout d'espace entre les statuts */
+}
+/* Conteneur pour les actions */
+.actions {
+  position: relative;
+}
+
+/* Style pour la table des actions */
+.actions-table {
+  
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-spacing: 0; /* Supprime l'espacement entre les cellules */
+}
+
+/* Style des boutons dans la table des actions */
+.actions-table button {
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 11px; 
+  padding: 5px;
+  width: 100%;
+  border: none;
+  display: inline-block; /* Nécessaire pour que la rotation soit appliquée correctement */
+  transform: rotate(-30deg); /* Applique une rotation de 45 degrés au tableau */
+  transform-origin: top left;
+}
+
+.actions-table button:hover {
+  background-color: white;
+}
+.action-button {
+  color: black; 
+ 
+}
+.action-button-activate{
+  color: #28a745;
+}
+.action-button-delete{
+  color: #cc0000;
+}
+
+
+.actions-table td {
+  padding: 0px; /* Ajuste l'espacement interne des cellules */
+  border-bottom: 1px solid #ddd; 
+}
+.actions-table th {
+  padding: 5px; /* Ajuste l'espacement interne des cellules d'en-tête */
+  border-bottom: 1px solid #ddd; /* Ligne de séparation entre les lignes d'en-tête */
+}

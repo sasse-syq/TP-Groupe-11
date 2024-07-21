@@ -1,0 +1,148 @@
+<div class="container">
+      
+    <div class="tabs">
+        <button (click)="onFilterChange('all')">All</button>
+        <button (click)="onFilterChange('paid')">Paid</button>
+        <button (click)="onFilterChange('unpaid')">Unpaid</button>
+        <button (click)="onFilterChange('overdue')">Overdue</button>
+    </div>
+    <ul>
+        <!-- Affichage des utilisateurs filtrés -->
+        <li *ngFor="let user of filterTab(userFilter)">
+          <td>{{ user.name }}</td>
+          <td>{{ user.status }}</td>
+          <td>{{ user.paymentStatus }}</td>
+          <td>{{ user.amount  }}</td>
+          
+        </li>
+      </ul>
+  </div>
+
+
+<div class="pay">
+    <button class="pay-dues">
+        <span class="pay dues"></span> PAY DUES
+    </button>
+  <div class="table-heading">
+        <div><table>
+    <thead>
+        <tr>
+            <th>USER NAME</th>
+            <th>USER STATUS</th>
+            <th>STATUS PAYMENT</th>
+            <th>AMOUNT</th> 
+        </tr>
+    </thead>
+
+    <tbody>
+    
+        <tr>
+            <td>Jaxson Siphorn<br>
+                <p style="color: rgb(124, 124, 124);">exemple&#64;gmail.com</p>
+           <!--<button class="toggle-details">▼</button>  --> 
+           <ul><li>Date</li>
+            <li>User detail</li>   
+        </ul>
+            </td>
+            <td class="status-active">Active<br>
+                <p style="color: black; font-size: 9px;">Last login:14/APR/2020</p>
+            </td>
+            <td class="status-paid">Paid
+                <p style="color: black;">Paid on 15/APR/2020</p>
+            </td>
+            <td>$200
+                <p>USD</p>
+            </td>
+            <td><a href="#">View More</a></td>
+        </tr>
+        <tr>
+            <td>SASSE Elisée<br>
+                <p style="color: rgb(124, 124, 124);">exemple&#64;gmail.com</p>
+            </td>
+            <td class="status-inactive">Inactive<br>
+                <p style="color: black;font-size: 9px;">Last login:14/APR/2020</p>
+            </td>
+            <td class="status-overdue">Overdue
+                <p style="color: black;">Overdue on 15/APR/2020</p>
+            </td>
+            <td>$300
+                <p>USD</p>
+            </td>
+            <td><a href="#">View More</a></td>
+        </tr>
+        <tr>
+            <td>KOSSOU Ken<br>
+            <p style="color: rgb(124, 124, 124);">exemple&#64;gmail.com</p>
+            </td>
+            <td class="status-active">Active<br>
+                <p style="color: black;font-size: 9px;">Last login:14/APR/2020</p>
+            </td>
+            <td class="status-unpaid">Unpaid
+                <p style="color: black;">Unpaid on 15/APR/2020</p>
+            </td>
+            <td>$250
+                <p>USD</p>
+            </td>
+            <td><a href="#">View More</a></td>
+        </tr>
+        <tr>
+            <td>BELLO Farhan<br>
+                <p style="color: rgb(124, 124, 124);">exemple&#64;gmail.com</p>
+            </td>
+            <td class="status-active">Active<br>
+                <p style="color: black;font-size: 9px;">Last login:14/APR/2020</p>
+            </td>
+            <td class="status-paid">Paid
+                <p style="color: black;">Paid on 15/APR/2020</p>
+            </td>
+            <td>$250
+                <p>USD</p>
+            </td>
+            <td><a href="#">View More</a></td>
+        </tr>
+        <tr>
+            <td>Mira Levin<br>
+                <p style="color: rgb(124, 124, 124);">exemple&#64;gmail.com</p>
+            </td>
+            <td class="status-active">Active<br>
+                <p style="color: black;font-size: 9px;">Last login:14/APR/2020</p>
+            </td>
+            <td class="status-overdue">Overdue
+                <p style="color: black;">Overdue on 15/APR/2020</p>
+            </td>
+            <td>$250
+                <p>USD</p>
+            </td>
+            <td><a href="#">View More</a></td>
+        </tr>
+        <tr>
+            <td>Philip Saris<br>
+     <p style="color: rgb(124, 124, 124);">exemple&#64;gmail.com</p>
+        </td>
+            <td class="status-active">Active<br>
+                <p style="color: black;font-size: 9px;">Last login:14/APR/2020</p>
+            </td>
+            <td class="status-unpaid">Unpaid
+                <p style="color: black;">Unpaid on 15/APR/2020</p>
+            </td>
+            <td>$250
+                <p>USD</p>
+            </td>
+            <td><a href="#">View More</a></td>
+        </tr>
+        
+        
+    </tbody>
+</table>
+    </div>
+    <td class="actions">
+        <table class="actions-table">
+          <tr>
+            <td><button class="action-button">Edit</button>
+            <button class="action-button">View Profile</button>
+            <button class="action-button-activate">Activate User</button>
+            <button class="action-button-delete">Delete</button>
+        </td>
+          </tr>
+        </table>
+      

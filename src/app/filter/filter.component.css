@@ -1,0 +1,42 @@
+/* Style pour le conteneur principal du header */
+.header-container {
+    position: fixed; /* Fixe la position des éléments en haut de la page */
+    top: 0; /* Positionne les éléments en haut */
+    left: 0; /* Positionne les éléments à gauche */
+    right: 0; /* Positionne les éléments à droite */
+    background-color: #fff; /* Optionnel : fond blanc pour le conteneur */
+    padding: 10px; /* Optionnel : espacement interne du conteneur */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optionnel : ombre pour le conteneur */
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    justify-content: space-between; /* Aligne les éléments aux extrémités du conteneur */
+    align-items: center; /* Centre les éléments verticalement */
+    z-index: 1000; /* Assure que le conteneur est au-dessus des autres éléments */
+  }
+  
+  /* Style pour la barre de recherche */
+  .search-container {
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    align-items: center; /* Centre les éléments verticalement */
+  }
+  
+  /* Style pour la barre de recherche */
+  .search-bar {
+    margin-right: 10px; /* Ajoute un espace entre la barre de recherche et le bouton */
+  }
+  
+  /* Style pour le bouton de recherche */
+  .search-container button {
+    padding: 5px 10px; /* Ajuste le padding du bouton */
+  }
+  
+  /* Style pour le bouton de filtrage */
+  .filter-option {
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    align-items: center; /* Centre les éléments verticalement */
+  }
+  
+  /* Style pour le bouton de filtrage */
+  .filter-button {
+    padding: 5px 10px; /* Ajuste le padding du bouton */
+  }
+  
